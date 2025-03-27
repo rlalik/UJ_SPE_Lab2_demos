@@ -1,7 +1,20 @@
-Skrypty Gnuplot do rysowania charakterystyk amplitudowo-fazowych filtrów dolno- i górno-przepustowych z ćwiczenia 2 Specjalistycznej Pracowni Elektronicznej Wydziału Fizyki, Astronomii i Informatyki Stosowanej UJ.
+Skrypty Gnuplot do rysowania charakterystyk amplitudowo-fazowych filtrów dolno-, górno- i środkowo-przepustowych z ćwiczenia 2 Specjalistycznej Pracowni Elektronicznej Wydziału Fizyki, Astronomii i Informatyki Stosowanej UJ.
+
+### Uruchomienie skryptów
+Skrytpy nazywają się `wykres_dp.gp`, `wykres_sp.gp` i `wykres_gp.gp` gdzie `dp`, `sp` i `gp` oznacza dolno, środkowo- i górno-przepustowy.
+
+Uruchomianie za pomocą polecenia:
+```bash
+gnuplot wykres_dp.gp
+gnuplot wykres_sp.gp
+gnuplot wykres_gp.gp
+# lub wszystykie na raz w środowisku Linux
+for f in wykres_?p.gp; do gnuplot $f; done
+```
+
+Aby skrypty zadziałały, należy najpierw przygotować dane.
 
 ### Przygotowanie danych
-
 Należy przygotować pliki z danymi. Domyślne nazwy to `dane_dp.txt` dla filtru dolnoprzepustowego RC i `dane_gp.txt` dla filtru górnoprzepustowego RC.
 
 Przykładowy plik danych `dane_dp.txt` to:
