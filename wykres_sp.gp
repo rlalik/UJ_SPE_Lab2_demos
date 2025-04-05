@@ -103,7 +103,7 @@ set object 2 circle at first f_gl_th,-3 radius char 0.5 fs empty border lc rgb '
 set object 3 circle at first f_gh_th,-3 radius char 0.5 fs empty border lc rgb '#ff0000' lw 2
 
 text_x_pos = 0.330
-text_y_pos = 0.405
+text_y_pos = 0.5
 box_x_offset = 0.20
 set object 5 rect at screen text_x_pos+box_x_offset,text_y_pos size screen 0.44,0.21 lt 2
 
